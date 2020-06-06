@@ -125,6 +125,12 @@ const PinView = React.forwardRef(
           setInput("")
         }
       },
+      setCode: (code) => {
+        setInput(code);
+      },
+      getCode: () => {
+        return input;
+      },
     }
 
     const onButtonPressHandle = (key, value) => {
